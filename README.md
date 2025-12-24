@@ -1,2 +1,2 @@
 # templete_1
-templete one training with osama elzero enginer
+I complete it with Osama Elzero Enginer in frontend roadmap playlist
