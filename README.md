@@ -1,2 +1,2 @@
-# templete_2
-templete one traning with osama elzero enginer
+# templete_1
+templete one training with osama elzero enginer
