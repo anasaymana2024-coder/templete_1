@@ -16,6 +16,7 @@
 }
 body {
     font-family: "Work Sans", sans-serif;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -61,7 +62,7 @@ html {
 }
 @media (max-width:767px) {
     .special-heading h2 {
-        font-size: 60px;
+        font-size: 45px;
     }
     .special-heading p {
         font-size: 16px;
@@ -169,7 +170,8 @@ header .container .links ul li:not(:last-child) a{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 320px;
+    width: 90%;
+    max-width: 320px;
     z-index: 100;
 }
 .landing .intro-text h1 {
@@ -359,6 +361,11 @@ header .container .links ul li:not(:last-child) a{
     justify-content: space-between;
     gap: 100px;
 }
+@media (max-width: 767px) {
+    .about .container {
+        gap: 40px;
+    }
+}
 .about .container .image {
     position: relative;
     height: 375px;
@@ -385,6 +392,12 @@ header .container .links ul li:not(:last-child) a{
     border-bottom: 74px solid var(--main-color);
     z-index: -1;
 }
+@media (max-width: 767px) {
+    .about .container .image::before,
+    .about .container .image::after {
+        display: none;
+    }
+}
 .about .container .image img {
     width: 300px;
     height: 100%;
@@ -392,6 +405,11 @@ header .container .links ul li:not(:last-child) a{
 .about .container .about-content {
     flex-basis: 500px;
     margin-left: 50px;
+}
+@media (max-width:1200px) {
+    .about .container .about-content {
+        margin-left: 0;
+    }
 }
 @media (max-width:1200px) {
     .about .container .image {
@@ -422,6 +440,13 @@ header .container .links ul li:not(:last-child) a{
     color: #777;
 }
 /* end about section */
+@media (max-width: 767px) {
+    .services .services-content,
+    .features .container,
+    .portfolio .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+}
 /* start contact  */
 .contact {
     padding: var(--padding-section) 0;
